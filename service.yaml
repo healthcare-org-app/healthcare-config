@@ -1,0 +1,10 @@
+name: config-service
+port: 8005
+lang: python
+description: "config-service \u2014 domain: identity"
+http_deps:
+- auth-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
